@@ -4,4 +4,12 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.indieground.movie.moviePreview.repository.IMoviePreviewMapper">
+
+	<resultMap id="MoviePreviewMap" type="com.indieground.movie.moviePreview.model.MoviePreviewVO">
+		<id property="moviecode" column="moviecode" />
+		<result property="sn" column="sn" />
+		<result property="sumry" column="sumry" />
+		<result property="prvlink" column="prvlink" />
+		<result property="movienm" column="movienm" />
+	</resultMap>
 </mapper>
