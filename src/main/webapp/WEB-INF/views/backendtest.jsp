@@ -10,10 +10,9 @@
 <body>
 	
 	<c:forEach var = "movieinfo" items="${test}">
-		<img src = ${movieinfo.movieposter}>
-		<br>
-         # 영화코드: ${movieinfo.moviecode}, 영화명 ${movieinfo.movienm} <br>
-     </c:forEach>
+		<img src = ${movieinfo.movieposter}><br>
+         # 영화코드: ${movieinfo.moviecode}, 영화명: ${movieinfo.movienm} <br>
+    </c:forEach>
 	
 </body>
 </html>
