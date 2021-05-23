@@ -26,4 +26,12 @@
 		<result property="pdstatus" column="pdstatus" />
 	</resultMap>
 	
+	
+	<!-- 데이터 가져오기 테스트 -->
+	<select id="test" resultMap="MovieInfoMap">
+		SELECT * FROM movieinfo ORDER BY sn ASC
+	</select>
+	
+	
+	
 </mapper>
